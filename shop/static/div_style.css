@@ -19,3 +19,9 @@ div.icon {
 	line-height: 14px;
 	font-size: 45px;
 }
+
+div.grow:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}

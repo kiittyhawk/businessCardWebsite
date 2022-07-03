@@ -3,6 +3,10 @@
 {% block content %}
 
 <main>
+    {% include 'categories.html' %}
+    {% include 'about.html' %}
+    {% include 'contacts.html' %}
+
     <div>
         <div id="carouselExampleLight" class="carousel carousel-light slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -16,34 +20,34 @@
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="7000">
                     <img src="{% static 'carousel5.jpg' %}" class="d-block w-100" alt="..."
-                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7);">
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7); border-bottom: 3px solid #4b0fd6;">
                     <div class="carousel-caption d-md-block">
-                        <h1 style="color: white; text-shadow: 0px 10px 10px #41a002;">НОВАЯ ЛИНЕЙКА СОЛЕВОГО СКАНДАЛИСТА
+                        <h1 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">НОВАЯ ЛИНЕЙКА СОЛЕВОГО СКАНДАЛИСТА
                             PRIME В НАЛИЧИИ В САРАТОВЕ.</h1>
-                        <h4 style="color: white; text-shadow: 0px 10px 10px #41a002;" class="lead">Как обычно, в лучших
+                        <h4 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">Как обычно, в лучших
                             традициях Скандалиста - ярко, незабываемо и круто. Одна из самых лучших линеек от
-                            российского производителя.</h5>
+                            российского производителя.</h4>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="7000">
-                    <img src="{% static 'carousel2.jpg' %}" class="d-block w-100" alt="..."
-                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7);">
+                    <img src="{% static 'carousel4.jpg' %}" class="d-block w-100" alt="..."
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7); border-bottom: 3px solid #4b0fd6;">
                     <div class="carousel-caption d-md-block">
-                        <h1 style="color: white; text-shadow: 0px 0px 10px #41a002;">Что же такого в жидкости RELL, раз её
-                            так
-                            спрашивали и ждали?</h1>
-                        <h4 style="color: white; text-shadow: 0px 0px 10px #41a002;">Так много вопросов и так мало
-                            ответов...
-                        </h5>
+                        <h1 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">MAXWELLS на месте.</h1>
+                        <h4 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">Наконец-то мы получили
+                            долгожданные
+                            двенашки и двадцатки, которые кончаются в первую очередь.
+                        </h4>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="7000">
                     <img src="{% static 'carousel3.jpg' %}" class="d-block w-100" alt="..."
-                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7);">
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.7); border-bottom: 3px solid #4b0fd6;">
                     <div class="carousel-caption d-md-block">
-                        <h1 style="color: white; text-shadow: 0px 0px 10px #41a002;">Мы подумали и решили смириться с вашей
+                        <h1 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">Мы подумали и решили смириться с
+                            вашей
                             любовью к Хаскам, поэтому они СНОВА ВО ВСЕХ МАГАЗИНАХ В НАЛИЧИИ!!</h1>
-                        <h4 style="color: white; text-shadow: 0px 0px 10px #41a002;">Мы сдаёмся.</h5>
+                        <h4 style="color: white; text-shadow: 0px 10px 10px #4b0fd6;">Мы сдаёмся.</h5>
                     </div>
                 </div>
             </div>
@@ -59,7 +63,7 @@
             </button>
         </div>
     </div>
-    <hr class="featurette-divider">
+    <hr style="color: transparent;">
 
     <div style="max-width: auto">
         <div class="container marketing div-icon">
@@ -86,13 +90,15 @@
         </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr style="color: transparent;">
     <div class="row featurette-divider" style="padding: 15%; padding-top: 100px; max-width: auto;">
         <div class="col-md-7" style="text-align: right; padding-right: 50px; padding-top: 12%;">
-            <h2 style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="featurette-heading">
+            <h2 style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+                class="featurette-heading">
                 Сервисный центр
             </h2>
-            <span style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <span
+                style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                 На базе нашего магазина на Набережной Космонавтов 5, в городе Саратове, работает полноценный
                 сервисный центр по ремонту электронных сигарет и вейп девайсов, а также их обслуживанию.
                 Получить бесплатную консультацию, "намотать" бак или дрипку, отполировать механический мод,
@@ -100,21 +106,23 @@
             </span>
         </div>
         <div class="col-md-5">
-            <img src="../static/remont.jpg" alt="Сервисный центр" style="height: 500px; width: 500px; object-fit: cover;"
-            class="img-thumbnail">
+            <img src="../static/remont.jpg" alt="Сервисный центр"
+                style="height: 500px; width: 500px; object-fit: cover; max-width: 100%; border: 5px solid #81052e; border-radius: 15px;">
         </div>
-        
+
         <hr class="featurette-divider" style="height: 50px;">
 
         <div class="col-md-5">
-            <img src="../static/birth.jpg" alt="Сервисный центр" style="height: 500px; width: 500px; object-fit: cover;"
-            class="img-thumbnail">
+            <img src="../static/birth.jpg" alt="Если у Вас День рождения"
+                style="height: 500px; width: 500px; max-width: 100%; object-fit: cover; border: 5px solid #81052e; border-radius: 15px;">
         </div>
         <div class="col-md-7" style="text-align: left; padding-right: 50px; padding-top: 12%;">
-            <h2 style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" class="featurette-heading">
+            <h2 style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+                class="featurette-heading">
                 Если у Вас День рождения
             </h2>
-            <span style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            <span
+                style="color: white; text-shadow: 2px 2px 2px #000; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
                 В день рождения, и три дня после - скидка на все жидкости ассортимента - 20%, на железо -
                 10%*
             </span>
