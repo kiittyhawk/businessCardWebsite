@@ -1,0 +1,33 @@
+.btn-outline-search {
+	--bs-btn-color: #4b0fd6;
+	--bs-btn-border-color: #4b0fd6;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #4b0fd6;
+	--bs-btn-hover-border-color: #4b0fd6;
+	--bs-btn-focus-shadow-rgb: 25, 135, 84;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #4b0fd6;
+	--bs-btn-active-border-color: #4b0fd6;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #4b0fd6;
+	--bs-btn-disabled-bg: transparent;
+	--bs-gradient: none
+}
+
+.fide {
+    opacity: 0.6;
+}
+
+.fide:hover {
+    opacity: 1;
+}
+
+.a-fide {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.a-fide:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}

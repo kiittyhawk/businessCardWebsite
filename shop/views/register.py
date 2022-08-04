@@ -19,7 +19,3 @@ class UserRegisterView(CreateView):
         context = super().get_context_data(**kwargs)
         return context
 
-
-def logout_Us(request):
-    logout(request)
-    return redirect('index')

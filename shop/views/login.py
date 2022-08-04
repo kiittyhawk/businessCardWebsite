@@ -3,9 +3,9 @@ from typing import Any, Dict
 from django.urls import reverse_lazy
 from ..forms.login import LoginForm
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.views import LoginView
-
+from django.shortcuts import redirect
 
 class UserLoginView(LoginView):
     template_name = 'login.html'
@@ -29,3 +29,8 @@ class UserLoginView(LoginView):
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
         return context
+
+
+def logout_Us(request):
+    logout(request)
+    return redirect('index')
