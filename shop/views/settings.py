@@ -14,17 +14,19 @@ class SettingsView(FormView):
     success_url = reverse_lazy('settings')
 
     def form_valid(self, form: SettForm):
-        title = form.cleaned_data['title']
-        synopsis = form.cleaned_data['synopsis']
-        img = form.cleaned_data['img']
-        url = form.cleaned_data['url']
+        # title = form.cleaned_data['title']
+        # synopsis = form.cleaned_data['synopsis']
+        # img = form.cleaned_data['img']
+        # url = form.cleaned_data['url']
+        # try:
+        #     Article.objects.create(
+        #         title=title,
+        #         synopsis=synopsis,
+        #         img=img,
+        #         url=url
+        #     )
         try:
-            Article.objects.create(
-                title=title,
-                synopsis=synopsis,
-                img=img,
-                url=url
-            )
+            form.save()
         except DatabaseError as e:
             messages.success(
                 self.request, "Unsuccessful publish. DatabaseError")

@@ -11,7 +11,7 @@
 
     <div style="max-width: 45%; margin: 5%; background-color: white; border-radius: 10px; padding: 15px;">
         <h1>Добавить пост в карусель</h1>
-        <form method="post">
+        <form method="post" action="{% url 'settings' %}" enctype="multipart/form-data">
             {% csrf_token %}
             {% bootstrap_form form  %}
             {% buttons submit='OK' reset="Cancel" %}{% endbuttons %}
