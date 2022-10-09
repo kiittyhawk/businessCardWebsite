@@ -1,0 +1,536 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %}МАСТЕР Сервис-центр{% endblock %}
+{% block content %}
+
+<main>
+
+    <div>
+        <a name="top"></a>
+        <div id="carouselExampleLight" class="carousel carousel-light slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleLight" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="../static/1.jpg" class="d-block w-100" alt="..."
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.6); border-bottom: 3px solid #5bc1d0;">
+                    <div class="carousel-caption d-md-block">
+                        <h1 style="color: white; text-shadow: 0px 10px 10px black;">Ремонт автомобильной электроники
+                        </h1>
+                        <h4 style="color: white; text-shadow: 0px 10px 10px black;">Штатные магнитолы и сабвуферы,
+                            анитрадары, брелки автосигнализаций, бортовые компьютеры, парктроники автомобильные,
+                            автомобильные регистраторы, платы от абс и платы от любых автомобильных устройств, а также
+                            подключение автомагнитол в автомобиль</h4>
+                        <p><a class="btn btn-lg btn-light" href="#uslugi">Подробнее</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="../static/2.jpg" class="d-block w-100" alt="..."
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.6); border-bottom: 3px solid #5bc1d0;">
+                    <div class="carousel-caption d-md-block">
+                        <h1 style="color: white; text-shadow: 0px 10px 10px black;">Ремонт бытовой электроники</h1>
+                        <h4 style="color: white; text-shadow: 0px 10px 10px black;">Заставлю любую бытовую технику,
+                            независимо от сложности ее выполнения и важности назначения для владельца, работать
+                            круглосуточно, круглогодично и ежесекундно</h4>
+                        <p><a class="btn btn-lg btn-light" href="#uslugi">Подробнее</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="../static/3.jpg" class="d-block w-100" alt="..."
+                        style="width: 2560px; height: 650px; object-fit: cover; -webkit-filter: brightness(0.6); border-bottom: 3px solid #5bc1d0;">
+                    <div class="carousel-caption d-md-block">
+                        <h1 style="color: white; text-shadow: 0px 10px 10px black;">Ремонт плазменных телевизоров
+                        </h1>
+                        <h4 style="color: white; text-shadow: 0px 10px 10px black;">Полнофункциональный ремонт ЖК
+                            (LCD/LED) и Плазменных (PDP) телевизоров всех фирм и моделей</h4>
+                        <p><a class="btn btn-lg btn-light" href="#uslugi">Подробнее</a></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleLight"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleLight"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Далее</span>
+            </button>
+        </div>
+    </div>
+    <hr style="color: transparent;">
+
+    <div style="max-width: auto;" class="d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+        <div class="container marketing div-icon">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="../static/опыт.png" alt="" class="rounded-circle"
+                        style="width: 135px; height: 135px; object-fit: cover;">
+                    <h5 class="text-center" style="color: white; text-shadow: 2px 2px 2px #000; padding-top: 15px;">
+                        Более 20 лет стажа
+                    </h5>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="../static/гаранттия.png" alt="" class="rounded-circle">
+                    <h5 class="text-center" style="color: white; text-shadow: 2px 2px 2px #000; padding-top: 10px;">
+                        Гарантия на ремонт и<br>детали 12 месяцев
+                    </h5>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <img src="../static/скидка.png" alt="" class="rounded-circle"
+                        style="width: 135px; height: 135px; object-fit: cover;">
+                    <h5 class="text-center" style="color: white; text-shadow: 2px 2px 2px #000; padding-top: 15px;">
+                        Скидка 10% на все виды услуг<br>до конца года
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <a name="uslugi"></a>
+    </div>
+
+    <hr style="color: transparent;">
+    <hr style="color: transparent;">
+    <hr style="color: transparent;">
+    <!-- УСЛУГИ -->
+    <div class="col" style="background-image: url({% static 'чип.jpg' %});">
+        <div class="container uslugi">
+            <a name="uslugi"></a>
+            <h2 class="uslugi-txt text-center">УСЛУГИ</h2>
+            <div class="row">
+                <div class="col-4">
+                    <ul class="nav nav-pills nav-fill flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#home">Ремонт и установка
+                                телевизоров</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#profile">Ремонт пылесосов</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#contact">Ремонт стиральных машин</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content col-8">
+                    <div class="tab-pane fade show active" id="home">
+                        <div class="rounded shadow-sm g-0">
+                            <div class="card" style="background-color: #5bc1d0;">
+                                <img src="../static/tv.jpg" class="card-img-top uslugi-img w-100" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #212529;">Ремонт и установка телевизоров</h5>
+                                    <p class="card-text">
+                                    <ul style="color: #212529;">
+                                        <li>Диагностика</li>
+                                        <li>Установка телевизора</li>
+                                        <li>Настройка</li>
+                                        <li>Ремонт плазменных телевизоров, кинескопных и ЖК моделей</li>
+                                    </ul>
+                                    </p>
+                                    <a href="#callme" class="btn btn-uslugi-card">Заказать услугу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                        <div class="row rounded shadow-sm border g-0">
+                            <div class="card" style="background-color: #5bc1d0;">
+                                <img src="../static/пылесос.jpg" class="card-img-top uslugi-img w-100" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #212529;">Ремонт пылесосов</h5>
+                                    <p class="card-text">
+                                    <ul style="color: #212529;">
+                                        <li>Полная диагностика на наличие неисправностей</li>
+                                        <li>Чистка воздухоотводов от пыли и других загрязнений</li>
+                                        <li>Замена поврежденных микросхем</li>
+                                        <li>Ремонт роботов пылесосов, их настройка</li>
+                                        <li>Замена рабочих узлов, контактов, плат</li>
+                                        <li>Устранение дефектов корпуса</li>
+                                    </ul>
+                                    </p>
+                                    <a href="#callme" class="btn btn-uslugi-card">Заказать услугу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact">
+                        <div class="row rounded shadow-sm border g-0">
+                            <div class="card" style="background-color: #5bc1d0;">
+                                <img src="../static/стиралка.jpg" class="card-img-top uslugi-img w-100" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: #212529;">Ремонт стиральных машин</h5>
+                                    <p class="card-text">
+                                    <ul style="color: #212529;">
+                                        <li>Восстановить сливной насос</li>
+                                        <li>Заменить ТЭН, электродвигатель или УБЛ</li>
+                                        <li>Выполнить подключение стиральной машины, если у вас возникают проблемы</li>
+                                        <li>Откорректировать работу управляющего модуля и многое другое</li>
+                                    </ul>
+                                    </p>
+                                    <a href="#callme" class="btn btn-uslugi-card">Заказать услугу</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a name="faq"></a>
+            </div>
+        </div>
+    </div>
+    <!--Section: FAQ-->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="faq-txt text-center">FAQ / Ответы на частозадаваемые вопросы</h3>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Бытовая электроника -->
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="text-center fw-bold mb-3 mt-3">Бытовая электроника</h4>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Машина не набирает воду. Почему? Сколько стоит ремонт?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Возможно, не хватает давления воды (слабый напор), либо не
+                                    полностью открыт кран подачи воды, либо засорился сетчатый фильтр на входе в блок
+                                    клапанов набора воды. Также может быть неисправен блок клапанов набора воды, или не
+                                    подаётся сигнал от МУ при неисправности устройства блокировки люка (УБЛ) или
+                                    неисправности самого МУ. Стоимость работы зависит от конкретной неисправности из
+                                    вышеперечисленных. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Не блокируется дверца люка стиральной машины. В чем причина?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Неисправна ручка дверцы люка/замок/УБЛ/модуль управления.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Не вращается барабан. В чем может быть проблема?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Неисправность двигателя: износ щёток, замыкание обмоток
+                                    статора,
+                                    неисправность датчика оборотов двигателя, повреждение ламелей ротора (для щёточного
+                                    двигателя), обрыв в цепи питания двигателя, неисправность конденсатора,
+                                    неисправность
+                                    инвертора управления двигателем (для бесконтактного двигателя), обрыв ремня, слетел
+                                    ремень (возможен при нарушении соосности вала бака и двигателя из-за износа
+                                    подшипников), износ и заклинивание подшипников, неисправность модуля управления.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-item-four">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-four" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Не нагревается вода. Что случилось и сколько стоит ремонт?
+                                </button>
+                            </h2>
+                            <div id="flush-four" class="accordion-collapse collapse" aria-labelledby="flush-item-four"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Возможная причина – неисправность трубчатого нагревательного
+                                    элемента (ТЭН). В нашей практике ремонта стиральных машин в Челябинске и Московской
+                                    области физическое разрушение ТЭНа встречается в стиральных машинах Samsung и LG.
+                                    Это
+                                    связано с использованием некачественного материала корпуса ТЭНа, который просто
+                                    «растворяется» в воде и разрушается. Это может привести к короткому замыканию в цепи
+                                    питания ТЭНа и, в лучшем случае, повреждению модуля управления (МУ), а в худшем к
+                                    возникновению пожара. Поэтому, если Вы обнаружили, что вода не нагревается, то
+                                    срочно
+                                    остановите и обесточьте машину и обратитесь к специалистам по ремонту стиральных
+                                    машин.
+                                    Датчик температуры также может быть причиной отсутствия нагрева, но его
+                                    неисправность –
+                                    очень редкий случай.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-item-five">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-five" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Белье после стирки остается мокрым. Видимо, машина плохо отжимает белье? В чем
+                                    причина?
+                                </button>
+                            </h2>
+                            <div id="flush-five" class="accordion-collapse collapse" aria-labelledby="flush-item-five"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Стоимость ремонта зависит от причины плохого отжима.
+                                    Специалист
+                                    по ремонту стиральных машин в процессе диагностики выявит неисправный узел и
+                                    устранит
+                                    проблему.
+
+                                    Плохой отжим может быть связан со следующими неисправностями:
+
+                                    Сбой в работе двигателя стиральной машины. Во время цикла стирки двигатель работает
+                                    на
+                                    малых оборотах и испытывает незначительную нагрузку. При работе на отжиме белья
+                                    нагрузка
+                                    вырастает до максимальной. Если износ щёток двигателя приближается к критическому
+                                    уровню
+                                    или произошло замыкание в обмотках, то двигатель не справляется с нагрузкой и отжим
+                                    происходит на малых оборотах или программа даёт сбой. В этом случае необходим ремонт
+                                    или
+                                    замена двигателя. Ремонт стоит от 1500 до 5000 рублей, новый двигатель от 6000 до
+                                    12000
+                                    рублей (для бюджетных марок СМА).
+                                    Засорение сливной системы или неисправность сливного насоса. Устранение засора и
+                                    прочистка сливной системы стиральной машины стоит от 790 до 1900 рублей. Замена
+                                    сливного
+                                    насоса обойдётся от 1800 до 2500 рублей в зависимости от марки и модели СМА,
+                                    стоимость
+                                    помпы от 900 до 3500 рублей в зависимости от модели и производителя.
+                                    Слабое натяжение ремня привода барабана стиральной машины. Замена ремня стоит от 790
+                                    до
+                                    1900 рублей в зависимости от марки и модели. Разброс цен связан с тем, что есть
+                                    конструкции машин без люка на задней стенке, у которых для доступа к шкиву барабана
+                                    необходима частичная разборка корпуса. Новый ремень обойдётся от 300 до 900 рублей в
+                                    зависимости от размера, конфигурации, материала и производителя.
+                                    Подклинивание подшипников. В этом случае необходима их замена. Ремонт, связанный с
+                                    заменой подшипников стиральной машины, является трудоёмкой и дорогостоящей
+                                    процедурой —
+                                    это капитальный ремонт бака, который сопровождается полной разборкой стиральной
+                                    машины.
+                                    При этом меняется и сальник, который предотвращает попадание воды в подшипниковый
+                                    узел.
+                                    Стоимость ремонта от 30 до 50% стоимости новой стиральной машины и зависит от её
+                                    габаритов, конструкции бака (металлический или пластиковый, разборный или не
+                                    разборный),
+                                    износа посадочных мест подшипников — вала барабана и втулки бака.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-item-six">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-six" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Стиральная машина не сливает воду.
+                                </button>
+                            </h2>
+                            <div id="flush-six" class="accordion-collapse collapse" aria-labelledby="flush-item-six"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Причины могут быть разные. Рассмотрим их по порядку:
+                                    <ul>
+                                        <li>Засор в канализации, к которой присоединён сливной шланг стиральной машины.
+                                        <li>Засорение сливного шланга. Он имеет гофрированную структуру и специально
+                                            прокладывается с перепадами уровней для получения гидрозатвора, поэтому
+                                            мелкие
+                                            частицы тканей, ворсинки от одежды постепенно накапливаются в нижнем колене
+                                            шланга и
+                                            блокируют слив воды.
+                                        <li>Засорение сливного фильтра.
+                                        <li>Посторонние мелкие предметы, нитки, длинные волосы могут заблокировать
+                                            крыльчатку
+                                            сливного насоса и вывести его из строя.
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-item-7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-7" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Стиральная машина прыгает и гудит при отжиме.
+                                </button>
+                            </h2>
+                            <div id="flush-7" class="accordion-collapse collapse" aria-labelledby="flush-item-7"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Стиральная машина прыгает из-за повышенной вибрации при отжиме. Это может быть
+                                    вызвано разными причинами:
+
+                                    Недостаточная загрузка стиральной машины бельём. При стирке одного-двух предметов
+                                    бельё физически не может равномерно распределится по поверхности барабана и центр
+                                    тяжести смещается от оси вращения, что и вызывает повышенную вибрацию и биение
+                                    барабана.
+                                    Избыточная загрузка стиральной машины бельём. Слишком большая масса барабана с
+                                    бельём, пропитанным водой, при вращении на высоких оборотах вызывает избыточную
+                                    динамику, с которой не могут справиться штатные амортизаторы. Это приводит к
+                                    преждевременному разрушению подшипников.
+                                    Износ амортизаторов стиральной машины приводит к повышенной вибрации и последующему
+                                    разрушению подшипников.
+                                    Износ подшипникового узла приводит к люфту в посадке «барабан – бак» и при отжиме
+                                    белья вызывает, кроме повышенной вибрации, появление посторонних звуков (гул, шум).
+                                    Стоимость замены подшипников от 30 до 50% стоимости новой стиральной машины (см.
+                                    п.5).
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Автомобильная электроника -->
+                <div class="col-md-6 col-sm-12">
+                    <h4 class="text-center fw-bold mb-3 mt-3">Автомобильная электроника</h4>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Как я могу узнать стоимость обслуживания?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Запросите оценку онлайн, заполнив заявку внизу страницы. Наш специалист свяжется и
+                                    проконсультирует Вас. Скажет стоимость работ и запчастей, предложит удобное время
+                                    записи на сервис.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Сколько стоит диагностика?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Диагностика - бесплатно.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Сколько времени занимает диагностика?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    Диагностика производится в течении суток, после чего мы звоним вам и сообщаем
+                                    стоимость ремонта, а вы решаете - ремонтировать или нет
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a name="cont"></a>
+    </section>
+    <!--Section: FAQ-->
+    <!--Section: Contacts-->
+    <div class="contacts col-12"  style="background-image: url({% static 'car.jpg' %});">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-12"> -->
+                    <h3 class="uslugi-txt text-center">КОНТАКТЫ</h3>
+                <!-- </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 pb-4">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/10738/lubercy/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Люберцы</a><a
+                            href="https://yandex.ru/maps/10738/lubercy/house/ulitsa_3_ye_pochtovoye_otdeleniye_80a/Z04YfgFkT0wOQFtvfXp5cnlrYA==/?ll=37.864699%2C55.683585&utm_medium=mapframe&utm_source=maps&z=17.11"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 3-е Почтовое Отделение,
+                            80А — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZAIQAtC" width="600"
+                            height="600" frameborder="1" allowfullscreen="true"
+                            style="position:relative; border-radius: 15px;"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 cont-txt">
+                    <div style="padding-top: 20%; padding-bottom: 20%; padding-left: 10%; padding-right: 10%;">
+                        <div class="row">
+                            <h3 class="fw-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#5bc1d0"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg> Офис
+                            </h3>
+                            <p style="padding-left: 7%;" class="fw-bold">Люберцы, 3-е Почтовое отделение, 80А<br />
+                                Вход через магазин Шварцкайзер</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="fw-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#5bc1d0"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg> Телефон / WhatsApp
+                            </h3>
+                            <p style="padding-left: 7%;" class="fw-bold">+7(927) 226-60-58</p>
+                        </div>
+                        <div class="row">
+                            <h3 class="fw-bold">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#5bc1d0"
+                                    class="bi bi-clock-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                </svg> Время работы
+                            </h3>
+                            <p style="padding-left: 7%;" class="fw-bold">Пн-Пт 10:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="call-me" id="callme">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="uslugi-txt fw-bold text-center">Обратная связь</h3>
+                </div>
+            </div>
+            <form style="padding-bottom: 5%;" method="post">
+                {% csrf_token %}
+                {{ form.errors }}
+                {% for elem in form %}
+                <div class="mb-3">
+                    <p><label for="{{ elem.id_for_label }}" class="form-label" style="color: white;">{{ elem.label }} :
+                        </label>
+                        {{ elem }}</p>
+                    <div class="form-error">{{ elem.errors }}</div>
+                </div>
+                {% endfor %}
+                <div class="form-captcha"></div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </footer>
+</main>
+{% endblock %}

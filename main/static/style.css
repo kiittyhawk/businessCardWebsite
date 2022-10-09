@@ -1,0 +1,189 @@
+:root {
+	--color1: #212529;
+	--color2: #5bc1d0;
+}
+
+section {
+	display: block;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+}
+
+.btn-outline-search {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: var(--color1);
+	--bs-btn-border-color: #212529;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #5bc1d0;
+	--bs-btn-hover-border-color: #1a1e21;
+	--bs-btn-focus-shadow-rgb: 66, 70, 73;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #1a1e21;
+	--bs-btn-active-border-color: #191c1f;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #212529;
+	--bs-btn-disabled-border-color: #212529
+}
+
+.btn-uslugi-card {
+	--bs-btn-color: var(--color2);
+	--bs-btn-bg: var(--color1);
+	--bs-btn-border-color: var(--color2);
+	--bs-btn-hover-color: var(--color1);
+	--bs-btn-hover-bg: #5bc1d0;
+	--bs-btn-hover-border-color: var(--color2);
+	--bs-btn-focus-shadow-rgb: 66, 70, 73;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #1a1e21;
+	--bs-btn-active-border-color: #191c1f;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #212529;
+	--bs-btn-disabled-border-color: #212529
+}
+
+.image-uslugi {
+	object-fit: contain;
+	height: 525px;
+	width: 700px;
+}
+
+.text-uslugi {
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dimension {
+	width: 500px;
+	height: 300px;
+}
+
+.uslugi {
+	width: auto;
+	height: 881px;
+	margin-top: auto;
+}
+
+.uslugi-img {
+	width: 853px;
+	height: 400px;
+	object-fit: cover;
+}
+
+.nav-pills .nav-link.active {
+	background-color: #5bc1d0;
+	color: var(--color1);
+	border-radius: 0%;
+}
+
+.nav-pills .nav-link {
+	background-color: var(--color1);
+	color: #fff;
+	border-radius: 0%;
+}
+
+.nav-pills .nav-link:hover {
+	background-color: var(--color2);
+	color: var(--color1);
+	border-radius: 0%;
+}
+
+.uslugi-txt {
+	color: var(--color2);
+	padding: 25px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	/* text-shadow: 0px 10px 10px black; */
+}
+
+.faq {
+	background-color: var(--color2);
+	max-width: 100%;
+	padding-top: 20px;
+	min-height: 660px;
+}
+
+.faq-txt {
+	color: var(--color1);
+	padding: 35px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-shadow: 0px 10px 10px var(--color2);
+}
+
+.accordion-style {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 35px;
+}
+
+.accordion-button {
+	background-color: var(--color2);
+	color: var(--color1);
+	font-weight:bold;
+}
+
+.accordion-button:hover {
+	background-color: var(--color1);
+	color: var(--color2);
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: var(--color1);
+	color: var(--color2);
+}
+
+.accordion-button:focus {
+	border-color: transparent;
+}
+
+.accordion-item {
+	background-color: var(--color2);
+}
+
+.contacts {
+	background-color: #181a1d;
+	max-width: 100%;
+	padding-top: 20px;
+	min-height: 870px;
+}
+
+.cont-txt {
+	color: var(--color1);
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 15px;
+	max-height: 600px;
+}
+
+.call-me {
+	background-color: var(--color1);
+	max-width: 100%;
+	padding-top: 20px;
+	min-height: 500px;
+}
+
+.btn-primary {
+	--bs-btn-color: var(--color1);
+	--bs-btn-bg: var(--color2);
+	--bs-btn-border-color: var(--color2);
+	--bs-btn-hover-color: var(--color2);
+	--bs-btn-hover-bg: var(--color1);
+	--bs-btn-hover-border-color: var(--color1);
+	--bs-btn-active-bg: var(--color2);
+	--bs-btn-active-color: var(--color1);
+	--bs-btn-active-border-color: var(--color2);
+}
+
+.form-check-input {
+	background: #fff;
+	border-color: var(--color2);
+}
+
+.form-check-input:checked {
+	border-color: var(--color1);
+	background-color: var(--color2);
+}
